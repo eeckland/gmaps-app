@@ -10,13 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_20_145253) do
+ActiveRecord::Schema.define(version: 2019_08_21_153143) do
 
   create_table "destinations", force: :cascade do |t|
     t.string "city"
     t.string "country"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "latitude"
+    t.float "longitude"
+    t.string "description"
   end
 
 end
